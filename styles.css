@@ -20,6 +20,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -451,4 +452,202 @@ main {
     line-height: 1.8rem;
     color: #808080;
     margin-bottom: 10px;
+}
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url(./assets/imgs/bitcoinbaby2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoin-img-container h2 {
+    padding-top: 35px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--off-white);
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.plans-title {
+    width: 90px;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans-title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+
+.plans-title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.plans-container--slaider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--slaider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+
+.plans-container--slaider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
+.plans-conteiner--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 65%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 10px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    padding: 6px;
+    font-family: "Inter" , sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--just-white);
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price {
+    font-family: "Inter" , sans-serif;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    color: black;
+}
+
+.plan-card--price span {
+    font-family: "Inter" , sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: black;
+    vertical-align: 25px;
+    /* position: absolute;
+    bottom: 177px;
+    right: calc(50% + 35px); */
+}
+
+.plan-card--saving {
+    font-family: "Inter" , sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+    padding-top: 5px;
+}
+
+.plan-card--ca {
+    margin-top: 15px;
+    width: 150px;
+    height: 48px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/arrow-right-orange.svg);
+    vertical-align: text-bottom;
+}
+
+.main-plans-container .alpha {
+    border: 2px solid var(--bitcoin-orange);
+}
+
+.main-plans-container .alpha-ca {
+    background-color: var(--warm-black);
+    color: var(--just-white); 
+    border: none;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left ul {
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 1.8rem;
+}
+
+.footer-left li {
+    margin: 10px 0;
+}
+
+.footer-left a {
+    color: var(--just-white);
+    text-decoration: none;
 }

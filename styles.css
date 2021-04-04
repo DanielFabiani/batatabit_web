@@ -408,7 +408,7 @@ main {
 .product-details--card {
     width: 90%;
     min-width: 288px;
-    max-width: 400px;
+    max-width: 350px;
     height: 150px;
     margin: 15px auto;
     padding: 15px;

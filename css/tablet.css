@@ -1,0 +1,22 @@
+.tables-container--sliders {
+    justify-content: center;
+}
+
+.tables-container--sliders::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    margin: 0 auto;
+}
+
+.plans-container--slaider::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.plans-container--slaider {
+    justify-content: center;
+}

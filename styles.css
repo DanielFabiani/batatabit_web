@@ -145,6 +145,27 @@ main {
     color: #757575;
 }
 
+.tables-container--sliders {
+    display: flex;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-tables-container {
+    scroll-snap-align: center;
+}
+
+.tables-container--sliders .moneda {
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.tables-container--sliders .comision {
+    margin-right: 25px;
+}
+
 .main-currency-table {
     width: 70%;
     min-width: 235px;
@@ -164,6 +185,7 @@ main {
 }
 
 .currency-table--container {
+    scroll-snap-align: center;
     width: 90%;
     min-width: 230px;
     max-width: 300px;
